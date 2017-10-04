@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoginLinearLayout</string>
+    <string name="txtV_SignIn">Acceder</string>
+</resources>
