@@ -11,8 +11,8 @@
         android:layout_width="240dp"
         android:layout_height="240dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/logo"
-        android:background="@android:color/white"/>
+        android:background="@android:color/white"
+        app:srcCompat="@drawable/logo_fondo"/>
 
 </FrameLayout>
 

@@ -8,65 +8,98 @@
     tools:context="com.example.loginlinearlayout.LoginActivity"
     android:orientation="vertical"
     android:weightSum="1"
-    android:background="@color/colorAccent">
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/lly_login_padding">
 
     <TextView
         android:id="@+id/txtV_SignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.19"/>
+        android:layout_weight="0.07"
+        android:text="@string/txtV_SignIn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:layout_marginBottom="@dimen/txtV_SignIn_marginBottom"/>
 
     <TextView
         android:id="@+id/txtV_User"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.16"/>
+        android:layout_weight="0.06"
+        android:labelFor="@+id/edT_User"
+        android:text="@string/txtV_User"
+        android:textAppearance="@android:style/TextAppearance.Medium.Inverse"/>
 
     <EditText
         android:id="@+id/edT_User"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginBottom="@dimen/edT_User_marginBottom"/>
 
     <TextView
         android:id="@+id/txtV_Passw"
         android:layout_width="match_parent"
-        android:layout_height="35dp"/>
+        android:layout_height="27dp"
+        android:labelFor="@+id/edT_Passw"
+        android:text="@string/txtV_Password"
+        android:textAppearance="@android:style/TextAppearance.Medium.Inverse"/>
 
     <EditText
         android:id="@+id/edT_Passw"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
 
     <LinearLayout
+        android:id="@+id/lly_SignOptions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_gravity="center">
 
         <CheckBox
             android:id="@+id/chkB_Remember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Remember me"/>
+            android:text="@string/btn_Remember"
+            android:padding="@dimen/lly_SignOptions_padding"/>
 
         <TextView
             android:id="@+id/txtV_SignUp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@string/btn_SignUp"
+            android:textAppearance="@android:style/TextAppearance.Small.Inverse"
+            android:padding="@dimen/lly_SignOptions_padding"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_SignIn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_SignIn"
+        android:layout_marginBottom="@dimen/btn_SignIn_marginBottom"
+        android:layout_gravity="center"
+        android:background="@color/colorFacebook"/>
 
     <Button
         android:id="@+id/btn_GoogleLogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/btn_GoogleSign"
+        android:drawableLeft="@drawable/ic_google"
+        android:drawableStart="@drawable/ic_google"
+        android:background="@color/colorGoogle"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"/>
 
     <Button
         android:id="@+id/btn_FbLogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/btn_FBSign"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:drawableStart="@drawable/ic_facebook"
+        android:background="@color/colorFacebook"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"/>
 
 </LinearLayout>

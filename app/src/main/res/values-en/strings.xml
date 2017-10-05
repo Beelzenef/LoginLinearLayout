@@ -2,4 +2,11 @@
 <resources>
     <string name="app_name">LoginLinearLayout</string>
     <string name="txtV_SignIn">Sign In</string>
+    <string name="txtV_User">User name / Email address</string>
+    <string name="txtV_Password">Password</string>
+    <string name="btn_SignIn">Sign In</string>
+    <string name="btn_GoogleSign">Sign in - Google+</string>
+    <string name="btn_FBSign">Sign In - Facebook</string>
+    <string name="btn_Remember">Remember me</string>
+    <string name="btn_SignUp">Sign Up</string>
 </resources>
