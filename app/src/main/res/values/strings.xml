@@ -6,6 +6,6 @@
     <string name="btn_SignIn">Acceder</string>
     <string name="btn_GoogleSign">Acceder con Google+</string>
     <string name="btn_FBSign">Acceder con Facebook</string>
-    <string name="btn_Remember">Recuerdame</string>
+    <string name="btn_Remember"><u>Recuerdame</u></string>
     <string name="btn_SignUp">Registrarme</string>
 </resources>
