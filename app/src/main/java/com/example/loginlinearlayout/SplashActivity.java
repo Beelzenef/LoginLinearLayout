@@ -3,6 +3,11 @@ package com.example.loginlinearlayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+/**
+ * Activity de Splash, de duracion mínima, para el inicio de aplicación
+ *
+ * @author Elena G (Beelzenef)
+ */
 public class SplashActivity extends AppCompatActivity {
 
     @Override
